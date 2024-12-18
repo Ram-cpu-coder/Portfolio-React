@@ -9,10 +9,22 @@ const Projects = () => {
     >
       {/* <!-- projects --> */}
       <div className="projects">
+        <div className=" d-flex justify-content-end w-100 px-4">
+          <form className="d-flex" role="search">
+            <input
+              className="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button className="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
         {/* <!-- header-projects --> */}
         <div className="header-projects">
-          <h1>My Projects</h1>
-          <hr />
+          <h1 className="d-flex justify-content-end">My Projects</h1>
         </div>
 
         <div className="images-description-projects">
