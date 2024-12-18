@@ -3,7 +3,10 @@ import Cards from "./Cards";
 
 const Projects = () => {
   return (
-    <section id="projects">
+    <section
+      id="projects"
+      className="d-flex justify-content-center align-items-center w-100"
+    >
       {/* <!-- projects --> */}
       <div className="projects">
         {/* <!-- header-projects --> */}

@@ -2,8 +2,8 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="flex justify-center items-center h-[94vh] w-[100vw]">
-      <div className="wrapper-about">
+    <div className="d-flex justify-content-center align-items-center w-100">
+      <div className="wrapper-about w-100">
         <div className="img-about">
           <img src="./assets/images/man.png" />
         </div>
@@ -12,7 +12,7 @@ const About = () => {
           <h1>About Me</h1>
           <div className="detail-about">
             <h1>Ram Kumar Dhimal</h1>
-            <p>
+            <p className="w-75">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eum
               dolore accusantium laboriosam soluta commodi consectetur totam.
               Reprehenderit inventore aut eos et ab similique ipsum rerum

@@ -56,7 +56,9 @@ html {
   scroll-behavior: smooth;
 }
 
-
+#logo{
+  color: #3E1CE3
+}
 /* =========================================== */
 body {
   height: auto;
@@ -285,23 +287,22 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: rgba(134, 154, 204, 1);
   gap: auto;
   width: 100%;
-  height: 70vh;
+  height: 90vh;
 }
 
 /* skills */
 
 
 .skills {
-  margin-top: 100px;
-  /* margin: 0 50px; */
-  /* border: 2px solid red; */
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 100%;
   height: auto;
 }
 
@@ -348,11 +349,12 @@ body {
 
 /* projects */
 #projects {
-  width: 90%;
+  width: 100%;
+  background: rgba(134, 154, 204, 1);
 }
 
 .projects {
-  margin-top: 100px;
+  margin-top: 10px;
   /* margin: 0 50px; */
   /* border: 2px solid red; */
   display: flex;
@@ -511,25 +513,21 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-width: 90%;
   min-height: 80vh;
+  height: 90vh;
   padding: 0 30px;
 }
 
 .img-about {
   width: 40%;
-  transition: transform 0.2s ease-in-out;
 }
 
 .img-about img {
-  min-height: 80vh;
-  width: 100%;
+  min-height: 90vh;
+  width: 500px;
   aspect-ratio: 4/3;
 }
 
-.img-about:hover {
-  transform: scale(1.01);
-}
 
 .text-about {
   display: flex;
@@ -590,18 +588,15 @@ width: 90%;
 /* -----------------------------------------END-about------------------------------------------ */
 /* =----------------------------------------contact-------------------------------------- */
 .wrapper-contact {
-  /* border: 2px solid red; */
-  border-radius: 10px;
   margin-top: 5px;
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  width: 90%;
-  min-height: 70vh;
-  margin: auto;
-  margin-top: 100px;
+  width: 100%;
+  min-height: 90vh;
+  margin: 10px 0;
 
   background: rgba(134, 154, 204, 1);
   gap: 20px;
