@@ -3,7 +3,7 @@ import Cards from "./Cards";
 
 const Projects = () => {
   return (
-    <section id="projects" className="min-h-[100vh] block">
+    <section id="projects" className="min-h-[100vh]">
       {/* <!-- projects --> */}
       <div className="projects my-5 w-[85%]">
         <div className=" d-flex justify-content-end w-100"></div>

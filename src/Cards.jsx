@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Cards = ({ img, article, imgBrowser, imgGithub }) => {
   return (
-    <div className={`card-projects ${article.grid}`}>
+    <div className={`card-projects ${article.grid} block`}>
       {/* // <!-- img-description --> */}
       <div className="img-description">
         {img}
