@@ -106,7 +106,8 @@ body {
   aspect-ratio: 4 / 6;
   align-self: center;
   /* border: 2px solid red; */
-
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
   transition: transform 0.2s ease-in-out;
 }
 
@@ -192,7 +193,7 @@ body {
   position: absolute;
   left: 0;
   border-left: 1px solid #3E1CE3;
-  background: rgba(134, 154, 204, 1);
+  background: white;
   animation: typing 3s steps(10) infinite;
 }
 
@@ -218,12 +219,9 @@ background: rgb(43, 43, 43);
 }
 .button:hover{
   background: white;
-  /* transform: scaleX(1.2);
-  transform-origin: left; */
 }
 .download-CV {
   color: white;
-  /* transition: transform 0.2s ease-in-out; */
   width: 200px;
   /* background: black; */
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
@@ -291,7 +289,8 @@ background: rgb(43, 43, 43);
   justify-content: center;
   align-items: center;
   width: 100%;
-  background: rgba(134, 154, 204, 1);
+  /* background: rgba(134, 154, 204, 1); */
+  margin-top: 10px;
 }
 
 /* skills */
@@ -325,7 +324,7 @@ background: rgb(43, 43, 43);
   justify-content: center;
   align-items: center;
   width: 100%;
-  background: rgba(134, 154, 204, 1);
+  /* background: rgba(134, 154, 204, 1); */
 }
 
 .projects {
@@ -352,7 +351,6 @@ background: rgb(43, 43, 43);
 
   column-gap: 40px;
   row-gap: 40px;
-  padding: 0 10px;
 }
 
 
@@ -369,7 +367,7 @@ background: rgb(43, 43, 43);
   height: 100%;
 
 
-  background: rgba(134, 154, 204, 1);
+  /* background: rgba(134, 154, 204, 1); */
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
 
 }
@@ -478,7 +476,7 @@ background: rgb(43, 43, 43);
 /* -----------------------------------------about------------------------------------------ */
 
 .wrapper-about {
-  background: rgba(134, 154, 204, 1);
+  /* background: rgba(134, 154, 204, 1); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -490,9 +488,11 @@ background: rgb(43, 43, 43);
 
 
 .img-about img {
-  min-height: 90vh;
-  width: 100%;
-  aspect-ratio: 4/3;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+  /* background-position: center;
+  background-size: cover;
+  object-fit: cover; */
 }
 
 

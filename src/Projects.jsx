@@ -6,7 +6,7 @@ const Projects = () => {
     <section id="projects" className="min-h-[100vh]">
       {/* <!-- projects --> */}
       <div className="projects my-5 w-[85%]">
-        <div className=" d-flex justify-content-end w-100 px-4"></div>
+        <div className=" d-flex justify-content-end w-100"></div>
         {/* <!-- header-projects --> */}
         <div className="header-projects">
           <h1 className="text-5xl font-bold">My Projects</h1>

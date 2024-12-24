@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div className="wrapper-about w-[100%]">
       <div className="w-[85%] flex justify-center items-center bg-opacity-30 bg-white rounded-3xl p-2 custom-css-col">
-        <div className="w-[45%] left-hero-container">
+        <div className="w-[45%] left-hero-container img-about">
           <img src="./assets/images/man.png" />
         </div>
 
