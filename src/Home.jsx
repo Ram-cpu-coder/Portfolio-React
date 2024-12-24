@@ -1,8 +1,11 @@
 import React from "react";
+import Skills from "./Skills";
+import Projects from "./Projects";
+import About from "./About";
 
 const Home = () => {
   return (
-    <div className="wrapper">
+    <div>
       <div className="main-container">
         <div className="left-hero-container">
           <div className="hero-container">
@@ -29,7 +32,7 @@ const Home = () => {
               <div className="button">
                 <button className="download-CV">
                   <a href="" download>
-                    Download CV <i className="fa-solid fa-download"></i>
+                    Download CV
                   </a>
                 </button>
               </div>
@@ -64,6 +67,9 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Skills />
+      <Projects />
+      <About />
     </div>
   );
 };

@@ -71,6 +71,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 
@@ -82,7 +83,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 90vh;
+  height: 92.35vh;
 }
 
 
@@ -90,18 +91,17 @@ body {
 .left-hero-container {
   display: flex;
   flex-direction: row;
-  width: 90%;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
   height: auto;
 
-  background: rgba(134, 154, 204, 1);
   margin-top: 50px;
 
   position: relative;
 }
 
 .left-hero-container img {
-  /* height: 50%;
-  width: auto; */
   width: 300px;
   aspect-ratio: 4 / 6;
   align-self: center;
@@ -111,7 +111,7 @@ body {
 }
 
 .left-hero-container img:hover {
-  transform: scale(1.05);
+  transform: scale(1.01);
   z-index: 1;
 }
 
@@ -208,33 +208,36 @@ body {
   }
 }
 
-.download-CV {
+.button{
+background: rgb(43, 43, 43);
+  transition: background 0.3s ease-in-out;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
   border: none;
   border-radius: 9px;
-  background: black;
-  padding: 10px;
-
+  
+}
+.button:hover{
+  background: white;
+  /* transform: scaleX(1.2);
+  transform-origin: left; */
+}
+.download-CV {
+  color: white;
+  /* transition: transform 0.2s ease-in-out; */
+  width: 200px;
+  /* background: black; */
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
-
-  transition: transform 0.2s ease-in-out;
-  /* cursor: pointer; */
+  border: none;
+  border-radius: 9px;
+  padding: 10px;
+  
 }
 
 .download-CV:hover {
-  transform: scale(1.1);
-  background: #d9e2e7;
-}
-
-.download-CV a {
-  text-decoration: none;
-  color: white;
-  font-weight: 600;
-}
-
-.download-CV a:hover {
+  /* background: #d9e2e7; */
   color: black;
-  font-weight: 600;
 }
+
 
 .achievement-container {
   display: flex;
@@ -287,23 +290,22 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgba(134, 154, 204, 1);
-  gap: auto;
   width: 100%;
-  height: 90vh;
+  background: rgba(134, 154, 204, 1);
 }
 
 /* skills */
 
 
 .skills {
-  margin-top: 10px;
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 95%;
   height: auto;
+  min-height: 500px;
 }
 
 
@@ -311,57 +313,27 @@ body {
 .header-skills,
 .header-projects {
   font-size: 30px;
-  margin-bottom: 30px;
+  margin: 30px;
 }
 
-.header-skills h1 {
-  font-size: 45px;
-}
 
-.header-projects h1 {
-  font-size: 45px;
-}
-
-.images-skills {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  width: 90%;
-  gap: 20px;
-
-}
-
-.images-skills img {
-  height: 100px;
-  min-width: 100px;
-  transition: transform 0.3s ease-in-out;
-
-  object-fit: cover;
-  aspect-ratio: 30 / 30;
-}
-
-.images-skills img:hover {
-  transform: scale(1.2);
-}
 
 
 /* projects */
 #projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   background: rgba(134, 154, 204, 1);
 }
 
 .projects {
-  margin-top: 10px;
-  /* margin: 0 50px; */
-  /* border: 2px solid red; */
+  /* margin-top: 10px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
   height: auto;
 }
 
@@ -370,7 +342,7 @@ body {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
   grid-template-areas:
       "one two"
       "three four"
@@ -396,7 +368,6 @@ body {
   width: 100%;
   height: 100%;
 
-  gap: 10px;
 
   background: rgba(134, 154, 204, 1);
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
@@ -501,8 +472,6 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 1.2rem;
-  font-weight: 500;
 }
 
 /* ----------------------------------------END-skills-and-myprojects-section----------------------- */
@@ -514,17 +483,15 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 80vh;
-  height: 90vh;
-  padding: 0 30px;
+  height: auto;
+  padding: 20px 0;
 }
 
-.img-about {
-  width: 40%;
-}
+
 
 .img-about img {
   min-height: 90vh;
-  width: 500px;
+  width: 100%;
   aspect-ratio: 4/3;
 }
 
@@ -537,6 +504,8 @@ body {
   /* border: 2px solid red; */
   gap: 10px;
   width: 80%;
+  height: auto;
+  margin: 10px 0;
 }
 
 .text-about>h1 {
@@ -549,6 +518,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 15px;
+  height: auto;
 }
 
 .interest {
@@ -796,20 +766,32 @@ body {
 
   /* grid-container */
 
-
+.grid-area-one{
+  grid-area: one;
+}
+.grid-area-two{
+  grid-area: two;
+}
+.grid-area-three{
+  grid-area:three;
+}
+.grid-area-four{
+  grid-area: four;
+}
+.grid-area-five{
+  grid-area: five;
+}
+.grid-area-six{
+  grid-area: six;
+}
+.grid-area-seven{
+  grid-area: seven;
+}
+.grid-area-eight{
+  grid-area: eight;
+}
   .images-description-projects {
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: repeat(8, 1fr);
-      grid-template-areas:
-          "one"
-          "two"
-          "three"
-          "four"
-          "five"
-          "six"
-          "seven"
-          "eight"
-      ;
+     
       row-gap: 30px;
 
       width: 100%;
@@ -832,10 +814,24 @@ body {
       justify-content: center;
   }
 
-
+.images-description-projects{
+   grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(auto, 1fr);
+      grid-template-areas:
+          "one"
+          "two"
+          "three"
+          "four"
+          "five"
+          "six"
+          "seven"
+          "eight"
+      ;
+}
+.custom-css-col{
+  flex-direction: column;
+}
   .img-about {
-      /* width: 50%; */
-      margin-bottom: 10px;
   }
  
   .text-about>h1 {
@@ -872,22 +868,22 @@ body {
 
 
   .main-container {
-      width: 80%;
-  }
-
-  .left-hero-container {
       width: 100%;
   }
 
+  .left-hero-container {
+      width: 95%;
+  }
 
+.achievement-container{
+  width: 95%;
+}
 }
 
 
 @media screen and (max-width: 700px) {
 
-  .left-hero-container img {
-      height: 100%;
-  }
+ 
 
   .main-container {
       height: auto;
@@ -895,16 +891,11 @@ body {
 
   .left-hero-container {
       height: 100%;
+      width: auto;
       flex-direction: column-reverse;
 
   }
 
-  .left-hero-container img {
-      width: 60%;
-      margin: auto;
-
-      /* border: 2px solid red; */
-  }
 
   .hero-container {
       width: auto;
@@ -950,7 +941,8 @@ body {
 
 @media screen and (max-width: 610px) {
   .left-hero-container {
-      width: 100%;
+      width: 95%;
+      height: auto;
   }
 
   .achievement {

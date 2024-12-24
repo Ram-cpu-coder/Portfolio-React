@@ -6,9 +6,7 @@ import Skills from "./Skills";
 import Projects from "./Projects";
 import { Route, Routes } from "react-router-dom";
 import NavBar from "./NavBar";
-
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "flowbite";
 
 import "./App.css";
 

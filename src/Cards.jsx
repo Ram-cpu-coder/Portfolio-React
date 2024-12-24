@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Cards = ({ img, article, imgBrowser, imgGithub }) => {
   return (
-    <div className="card-projects grid-area-one">
+    <div className={`card-projects ${article.grid}`}>
       {/* // <!-- img-description --> */}
       <div className="img-description">
         {img}
@@ -16,23 +16,23 @@ const Cards = ({ img, article, imgBrowser, imgGithub }) => {
           </div>
 
           <div className="link-icon">
-            <a
-              href="https://github.com/Ram-cpu-coder/E-Commerce-HTML-CSS.git"
+            <Link
+              to="https://github.com/Ram-cpu-coder/E-Commerce-HTML-CSS.git"
               target="_blank"
             >
               {imgBrowser}
-            </a>
-            <a
-              href="https://ram-cpu-coder.github.io/E-Commerce-HTML-CSS/"
+            </Link>
+            <Link
+              to="https://ram-cpu-coder.github.io/E-Commerce-HTML-CSS/"
               target="_blank"
             >
               {imgGithub}
-            </a>
+            </Link>
           </div>
         </div>
       </div>
       <div className="brief-description">
-        <h3>
+        <h3 className="text-base font-bold">
           {article.title} | {article?.type}
         </h3>
       </div>
