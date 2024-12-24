@@ -3,7 +3,7 @@ import { MdOutgoingMail } from "react-icons/md";
 
 const Contact = () => {
   return (
-    <div id="contact">
+    <div id="contact" className="block">
       <div className="wrapper-contact">
         <h1>Contact</h1>
         <div className="contact-icons">

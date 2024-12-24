@@ -16,7 +16,7 @@ const Skills = () => {
     };
   }, []);
   return (
-    <div className="wrapper-skills-projects min-h-[92.35vh] h-[auto]">
+    <div className="block wrapper-skills-projects min-h-[92.35vh] h-[auto] ">
       <div className="header-projects">
         <h1 className="text-5xl font-bold">Skills</h1>
       </div>

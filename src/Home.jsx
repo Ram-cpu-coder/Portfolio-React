@@ -67,9 +67,11 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Skills />
-      <Projects />
-      <About />
+      <div className="view">
+        <Skills />
+        <Projects />
+        <About />
+      </div>
     </div>
   );
 };
