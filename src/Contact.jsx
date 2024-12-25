@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FloatingLabel, Button } from "flowbite-react";
 import { MdEmail } from "react-icons/md";
 import { TiSocialFacebookCircular } from "react-icons/ti";
@@ -8,6 +8,20 @@ import { IoPhonePortrait } from "react-icons/io5";
 import { LiaGithub } from "react-icons/lia";
 
 const Contact = () => {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [formData, setFormData] = useState([]);
+  console.log("Before", formData);
+  const handleSubmit = () => {
+    const newData = { firstName: firstName, lastName: lastName, email: email };
+    setFormData((prev) => [...prev, newData]);
+
+    setFirstName("");
+    setLastName("");
+    setEmail("");
+  };
+  console.log("After", formData);
   return (
     <div id="contact" className="block h-[auto]">
       <div className="wrapper-contact">
@@ -51,14 +65,32 @@ const Contact = () => {
           </div>
           <div className="right-block flex flex-col justify-center items-center w-[auto] min-h-[60vh]">
             <h1 className="text-4xl mb-5">Stay in Touch</h1>
-            <div className="w-[100%] flex flex-col items-center justify-center">
-              <FloatingLabel variant="outlined" label="First Name" />
-              <FloatingLabel variant="outlined" label="Last Name" />
-              <FloatingLabel variant="outlined" label="Email" />
+            <form
+              className="w-[100%] flex flex-col items-center justify-center"
+              onSubmit={(e) => {
+                e.preventDefault;
+                handleSubmit();
+              }}
+            >
+              <FloatingLabel
+                variant="outlined"
+                label="First Name"
+                onChange={(e) => setFirstName(e.target.value)}
+              />
+              <FloatingLabel
+                variant="outlined"
+                label="Last Name"
+                onChange={(e) => setLastName(e.target.value)}
+              />
+              <FloatingLabel
+                variant="outlined"
+                label="Email"
+                onChange={(e) => setEmail(e.target.value)}
+              />
               <Button type="submit" className="w-[95%]">
                 Submit
               </Button>
-            </div>
+            </form>
           </div>
         </div>
       </div>

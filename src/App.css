@@ -264,21 +264,38 @@ background: rgb(43, 43, 43);
 }
 .download-CV {
   color: white;
-  width: 200px;
+  width: 225px;
   /* background: black; */
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
   border: none;
   border-radius: 9px;
   padding: 10px;
+  transition: padding 0.2s ease-in-out;
   
 }
 
 .download-CV:hover {
-  /* background: #d9e2e7; */
+  padding-right: 10%;
   color: black;
 }
 
+.download-CV::after{
+  content: "";
+  display: inline-block;
+  margin-left: 10px;
+  height: 0;
+  width: 0;
+  background: url("/public/assets/images/download.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: height 0.2s ease-in-out, width 0.2s ease-in-out;
+}
 
+.download-CV:hover::after{
+  height: 15px;
+  width: 15px;
+}
 .achievement-container {
   display: flex;
   justify-content: space-around;

@@ -30,9 +30,9 @@ const Home = () => {
                 </h3>
               </div>
 
-              <div className="button">
+              <div className="button flex">
                 <button className="download-CV">
-                  <a href="" download>
+                  <a href="/assets/Resume.pdf" download>
                     Download CV
                   </a>
                 </button>
