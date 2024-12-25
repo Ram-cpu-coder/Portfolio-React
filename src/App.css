@@ -973,6 +973,17 @@ background: rgb(43, 43, 43);
       object-fit: cover;
       aspect-ratio: 30 / 30;
   }
+  .background{
+    background: none;
+    height: auto;
+  }
+  .contact{
+    flex-direction: column; 
+  }
+  .left-block{
+    width: 100%;
+    min-height: 30vh;
+  }
 }
 
 @media screen and (max-width: 610px) {
