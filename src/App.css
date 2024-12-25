@@ -29,6 +29,34 @@ to{
   animation-timeline: view();
   animation-range: entry 20%;
 }
+@keyframes left {
+  from{
+    opacity: 0;
+    transform: translateX(-20px);
+  }  
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.left-block{
+  animation: left 2s ease-in-out;
+}
+@keyframes right {
+  from{
+    opacity: 0;
+    transform: translateX(20px);
+  }  
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.right-block{
+  animation: right 2s ease-in-out;
+}
+
+/* =========================== */
 .wrapper-theme {
   background-color: var(--bg-color);
   color: var(--font-color);
@@ -580,23 +608,14 @@ background: rgb(43, 43, 43);
 
   width: 100%;
   min-height: 90vh;
-  margin: 10px 0;
 
-  background: rgba(134, 154, 204, 1);
   gap: 20px;
 }
 
-.contact-icons img {
-  height: 70px;
-  width: 70px;
-  transition: transform 0.2s ease-in-out;
-}
 
 .wrapper-contact>h1 {
   margin: 40px;
-  font-size: 40px;
   font-weight: bold;
-  font-style: italic;
 }
 
 .contact-icons img:hover {
@@ -605,25 +624,11 @@ background: rgb(43, 43, 43);
 
 .contact-icons {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   width: 50%;
 }
 
-.email-input {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 50px;
-  min-height: 50px;
-  background: white;
-  color: black;
-  border-radius: 10px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.6);
-
-  cursor: pointer;
-  padding: 0 10px;
-}
 
 .email-input a {
   text-decoration: none;

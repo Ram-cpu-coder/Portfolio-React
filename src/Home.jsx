@@ -2,6 +2,7 @@ import React from "react";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import About from "./About";
+import Contact from "./Contact";
 
 const Home = () => {
   return (
@@ -71,6 +72,7 @@ const Home = () => {
         <Skills />
         <Projects />
         <About />
+        <Contact />
       </div>
     </div>
   );

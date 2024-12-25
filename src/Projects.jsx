@@ -6,9 +6,9 @@ const Projects = () => {
     <section id="projects" className="min-h-[100vh]">
       {/* <!-- projects --> */}
       <div className="projects my-5 w-[85%]">
-        <div className=" d-flex justify-content-end w-100"></div>
+        <div className=" d-flex justify-content-end w-100 block"></div>
         {/* <!-- header-projects --> */}
-        <div className="header-projects">
+        <div className="header-projects block">
           <h1 className="text-5xl font-bold">My Projects</h1>
         </div>
 

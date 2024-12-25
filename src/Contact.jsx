@@ -1,31 +1,65 @@
 import React from "react";
-import { MdOutgoingMail } from "react-icons/md";
+import { FloatingLabel, Button } from "flowbite-react";
+import { MdEmail } from "react-icons/md";
+import { TiSocialFacebookCircular } from "react-icons/ti";
+import { TiSocialLinkedinCircular } from "react-icons/ti";
+import { TiSocialYoutubeCircular } from "react-icons/ti";
+import { IoPhonePortrait } from "react-icons/io5";
+import { LiaGithub } from "react-icons/lia";
 
 const Contact = () => {
   return (
-    <div id="contact" className="block">
+    <div id="contact" className="block h-[auto]">
       <div className="wrapper-contact">
-        <h1>Contact</h1>
-        <div className="contact-icons">
-          <a href="https://github.com/Ram-cpu-coder" target="_blank">
-            <img src="./assets/images/contact/github.png" />
-          </a>
-          <a href="https://www.linkedin.com/in/ramkumardhimal/" target="_blank">
-            <img src="./assets/images/contact/linkedin.png" />
-          </a>
-          <a href="https://www.youtube.com/" target="_blank">
-            <img src="./assets/images/contact/youtube.png" />
-          </a>
-          <a href="tel: 043278872983" target="_blank">
-            <img src="./assets/images/contact/phone.png" />
-          </a>
+        <div className="bg-cover bg-fixed bg-top w-[100%] h-[350px] bg-[url('assets/images/contactBg.jpg')] flex justify-center items-center">
+          <h1 className="text-5xl font-bold">Contact</h1>
         </div>
-
-        <h1>OR</h1>
-        <div className="email-input">
-          <a href="mailto:ramkumardhimal2057@icloud.com">
-            <MdOutgoingMail className="text-5xl text-black hover:scale-125 duration-150" />
-          </a>
+        <div className="flex items-center justify-center gap-10 w-[95%]">
+          <div className="left-block flex flex-col justify-center items-center w-[45%] min-h-[60vh]">
+            <h1 className="text-4xl mb-5">Lets Connect</h1>
+            <p className="text-center w-[70%]">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
+              eius beatae reprehenderit quisquam fugit amet ullam quia ipsum
+              dignissimos, laborum ipsa asperiores rerum eveniet rem provident
+              autem eaque! Beatae soluta quos voluptates nostrum distinctio.
+            </p>
+            <div className="contact-icons text-3xl mt-5">
+              <a href="https://github.com/Ram-cpu-coder" target="_blank">
+                <LiaGithub />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/ramkumardhimal/"
+                target="_blank"
+              >
+                <TiSocialLinkedinCircular />
+              </a>
+              <a href="https://www.youtube.com/" target="_blank">
+                <TiSocialYoutubeCircular />
+              </a>
+              <a href="https://www.facebook.com/" target="_blank">
+                <TiSocialFacebookCircular />
+              </a>
+            </div>
+            <div className="flex justify-between items-center gap-2 mt-5 font-bold">
+              <a href="mailto:ramkumardhimal2057@icloud.com">
+                <MdEmail />
+              </a>
+              <a href="tel: 043278872983" target="_blank">
+                <IoPhonePortrait />
+              </a>
+            </div>
+          </div>
+          <div className="right-block flex flex-col justify-center items-center w-[auto] min-h-[60vh]">
+            <h1 className="text-4xl mb-5">Stay in Touch</h1>
+            <div className="w-[100%] flex flex-col items-center justify-center">
+              <FloatingLabel variant="outlined" label="First Name" />
+              <FloatingLabel variant="outlined" label="Last Name" />
+              <FloatingLabel variant="outlined" label="Email" />
+              <Button type="submit" className="w-[95%]">
+                Submit
+              </Button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
