@@ -14,46 +14,72 @@
   --border-white-color: white;
 
 }
+
+@keyframes bottom-block {
+  from{
+    transform: translateY(30px);
+  }
+  to{
+    transform: translateX(0px);
+  }
+}
+.bottom-block{
+  animation: bottom-block 1s ease-in-out;
+  animation-timeline: view();
+}
 @keyframes appear {
-from{
+  from{
+scale: 0.75;
+  }
+  to{
+scale: 1;
+  }
+}
+@keyframes opacity {
+0%{
   opacity: 0;
-  scale: 0.5;
 }  
-to{
+25%{
+  opacity: 0.25;
+}
+50%{
+  opacity: 0.5;
+}
+75%{
+  opacity: 0.75;
+}
+100%{
   opacity: 1;
-  scale: 1;
 }
 }
 .block{
-  animation: appear 3s ease-in-out;
+  animation: appear 3s ease-in-out, opacity 3s ease-in-out;
   animation-timeline: view();
   animation-range: entry 20%;
 }
 @keyframes left {
   from{
-    opacity: 0;
     transform: translateX(-20px);
   }  
   to{
-    opacity: 1;
     transform: translateX(0px);
   }
 }
 .left-block{
-  animation: left 2s ease-in-out;
+  animation: left 1s ease-in-out;
+  animation-timeline: view();
 }
 @keyframes right {
   from{
-    opacity: 0;
     transform: translateX(20px);
   }  
   to{
-    opacity: 1;
     transform: translateX(0px);
   }
 }
 .right-block{
-  animation: right 2s ease-in-out;
+  animation: right 1s ease-in-out;
+  animation-timeline: view();
 }
 
 /* =========================== */
@@ -116,6 +142,12 @@ body {
   width: 100%;
 }
 
+/* ================================================== */
+/* Nav Bar Active Link */
+.active{
+  color: #577a93;
+  transition: color 0.4s ease-in-out;
+}
 
 /* ---------------------------main-container------------------ */
 .main-container {
@@ -364,6 +396,11 @@ background: rgb(43, 43, 43);
   width: 95%;
   height: auto;
   min-height: 500px;
+ 
+}
+.group > span> svg{
+  filter: invert(1) !important;
+ 
 }
 
 
@@ -541,7 +578,6 @@ background: rgb(43, 43, 43);
   align-items: center;
   min-height: 80vh;
   height: auto;
-  padding: 20px 0;
 }
 
 
@@ -628,7 +664,11 @@ background: rgb(43, 43, 43);
 
   gap: 20px;
 }
-
+.contact{
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+  }
 
 .wrapper-contact>h1 {
   margin: 40px;
@@ -867,8 +907,7 @@ background: rgb(43, 43, 43);
 .custom-css-col{
   flex-direction: column;
 }
-  .img-about {
-  }
+
  
   .text-about>h1 {
       margin-bottom: 20px;
@@ -890,19 +929,6 @@ background: rgb(43, 43, 43);
 }
 
 @media screen and (max-width: 880px) {
-  .nav-bar {
-      padding: 0 10%;
-  }
-
-  .nav-ul {
-      display: none;
-  }
-
-  .hamburger {
-      display: block;
-  }
-
-
   .main-container {
       width: 100%;
   }
@@ -977,11 +1003,11 @@ background: rgb(43, 43, 43);
     background: none;
     height: auto;
   }
-  .contact{
+  /* .contact{
     flex-direction: column; 
     justify-content: start;
     align-items: center;
-  }
+  } */
   .left-block{
     width: 100%;
     min-height: 30vh;

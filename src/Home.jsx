@@ -6,10 +6,10 @@ import Contact from "./Contact";
 
 const Home = () => {
   return (
-    <div>
+    <div className="">
       <div className="main-container">
         <div className="left-hero-container">
-          <div className="hero-container">
+          <div className="hero-container left-block">
             <div className="left-top-hero">
               <div className="para-hero">
                 <h3>
@@ -40,9 +40,9 @@ const Home = () => {
             </div>
           </div>
 
-          <img src="./assets/images/man.png" />
+          <img src="./assets/images/man.png" className="right-block" />
         </div>
-        <div className="achievement-container">
+        <div className="achievement-container bottom-block">
           <div className="achievement">
             <img src="./assets/images/badge.png" />
             <div className="text-achievement">
