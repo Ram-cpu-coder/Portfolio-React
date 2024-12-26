@@ -22,7 +22,7 @@ const Skills = () => {
       </div>
       <div className="h-[400px] w-[85%]">
         {isMobile ? (
-          <Carousel className="bg-black bg-opacity-60 rounded-3xl">
+          <Carousel className="rounded-3xl">
             <div className="min-h[auto] h-[500px] w-[100%] flex justify-around items-center">
               <img
                 src="./assets/images/html.png"
@@ -62,7 +62,7 @@ const Skills = () => {
             <div className="h-[500px] w-[100%] flex justify-around items-center">
               <img
                 src="./assets/images/github.png"
-                className="h-[100px] w-[100px] invert"
+                className="h-[100px] w-[100px]"
               />
             </div>
             <div className="min-h[auto] h-[500px] w-[100%] flex justify-around items-center">
@@ -73,7 +73,7 @@ const Skills = () => {
             </div>
           </Carousel>
         ) : (
-          <Carousel className="bg-[sky] bg-opacity-50 rounded-3xl">
+          <Carousel className="rounded-3xl">
             <div className="min-h[auto] h-[500px] w-[100%] flex justify-around items-center">
               <img
                 src="./assets/images/html.png"
@@ -107,7 +107,7 @@ const Skills = () => {
             <div className="h-[500px] w-[100%] flex justify-around items-center">
               <img
                 src="./assets/images/github.png"
-                className="h-[100px] w-[100px] invert"
+                className="h-[100px] w-[100px]"
               />
 
               <img

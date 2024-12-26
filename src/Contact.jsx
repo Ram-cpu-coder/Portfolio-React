@@ -32,9 +32,9 @@ const Contact = () => {
   return (
     <div id="contact" className="block min-h-[95vh] h-[auto]">
       <div className="flex flex-col contact items-center justify-center w-[95%] relative h-[80vh]">
-        <div className="flex flex-col justify-center items-center min-h-[30vh] w-[100%] left-block">
+        <div className="flex flex-col justify-center items-center min-h-[30vh] w-[100%]">
           <h1 className="text-5xl font-bold mb-5 text-center">Lets Connect</h1>
-          <div className="contact-icons text-5xl mt-10">
+          <div className="contact-icons text-5xl">
             <a href="https://github.com/Ram-cpu-coder" target="_blank">
               <LiaGithub />
             </a>
@@ -60,7 +60,7 @@ const Contact = () => {
             </a>
           </div>
         </div>
-        <div className="right-block flex flex-col justify-center items-center w-[100%] min-h-[auto]">
+        <div className="flex flex-col justify-center items-center w-[100%] min-h-[auto]">
           <h2 className="text-5xl font-bold mb-5 text-center">Address</h2>
           <p className="text-center text-xl w-[60%]">Strathfield, NSW 2135</p>
         </div>
@@ -72,9 +72,15 @@ const Contact = () => {
         </Button>
       </div>
       <div
-        className={`right-block flex flex-col justify-center items-center w-[auto] h-[auto]`}
+        className={`flex flex-col justify-center items-center w-[auto] h-[auto]`}
       >
-        <Modal show={openModal} size="md" onClose={onCloseModal} popup>
+        <Modal
+          show={openModal}
+          size="md"
+          onClose={onCloseModal}
+          popup
+          className=""
+        >
           <Modal.Header />
           <Modal.Body>
             <div className="space-y-6">
@@ -82,13 +88,13 @@ const Contact = () => {
                 Stay in Touch
               </h3>
               <div>
-                <div className="mb-2 block">
+                <div className="mb-2">
                   <Label htmlFor="name" value="Your Name" />
                 </div>
                 <TextInput id="name" type="text" required />
               </div>
               <div>
-                <div className="mb-2 block">
+                <div className="mb-2">
                   <Label htmlFor="email" value="Your email" />
                 </div>
                 <TextInput

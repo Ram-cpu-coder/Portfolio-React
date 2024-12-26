@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { Button, Navbar } from "flowbite-react";
 import { useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const location = useLocation();
@@ -22,7 +23,10 @@ const NavBar = () => {
   }, [location.pathname]);
 
   return (
-    <Navbar rounded className="sticky top-0 h-[50px] z-10 bg-[white] shadow-lg">
+    <Navbar
+      rounded
+      className="sticky top-0 h-[50px] z-10 bg-[white] shadow-lg animate-none"
+    >
       <Navbar.Brand href="/">
         <h1 className="text-2xl">
           <span
@@ -35,7 +39,7 @@ const NavBar = () => {
       </Navbar.Brand>
 
       <Navbar.Toggle />
-      <Navbar.Collapse className="bg-white">
+      <Navbar.Collapse className="bg-white transition-none">
         <Navbar.Link
           href="/"
           className={`text-xl ${activeLink === "home" ? "active" : ""}`}
