@@ -25,12 +25,12 @@ const Contact = () => {
   return (
     <div id="contact" className="block h-[auto]">
       <div className="wrapper-contact">
-        <div className="background bg-cover bg-fixed bg-top w-[100%] h-[350px] bg-[url('assets/images/contactBg.jpg')] flex justify-center items-center">
+        {/* <div className="background bg-cover bg-fixed bg-top w-[100%] h-[350px] bg-[url('assets/images/contactBg.jpg')] flex justify-center items-center">
           <h1 className="text-5xl font-bold">Contact</h1>
-        </div>
-        <div className="flex contact items-center justify-center gap-10 w-[95%]">
+        </div> */}
+        <div className="flex contact items-start justify-center gap-10 w-[95%]">
           <div className="left-block flex flex-col justify-center items-center w-[45%] min-h-[60vh]">
-            <h1 className="text-4xl mb-5">Lets Connect</h1>
+            <h1 className="text-5xl mb-5">Lets Connect</h1>
             <p className="text-center w-[70%]">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
               eius beatae reprehenderit quisquam fugit amet ullam quia ipsum
@@ -64,7 +64,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="right-block flex flex-col justify-center items-center w-[auto] min-h-[60vh]">
-            <h1 className="text-4xl mb-5">Stay in Touch</h1>
+            <h1 className="text-5xl mb-5">Stay in Touch</h1>
             <form
               className="w-[100%] flex flex-col items-center justify-center"
               onSubmit={(e) => {
@@ -72,6 +72,9 @@ const Contact = () => {
                 handleSubmit();
               }}
             >
+              {/* <FloatingLabel label="name">
+                <input type="text" name="name" id="name" />
+              </FloatingLabel> */}
               <FloatingLabel
                 variant="outlined"
                 label="First Name"
