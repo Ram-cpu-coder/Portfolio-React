@@ -23,10 +23,7 @@ const NavBar = () => {
   }, [location.pathname]);
 
   return (
-    <Navbar
-      rounded
-      className="sticky top-0 h-[50px] z-10 bg-[white] shadow-lg animate-none"
-    >
+    <Navbar rounded className="sticky top-0 h-[50px] z-10 bg-[white] shadow-lg">
       <Navbar.Brand href="/">
         <h1 className="text-2xl">
           <span
@@ -39,7 +36,7 @@ const NavBar = () => {
       </Navbar.Brand>
 
       <Navbar.Toggle />
-      <Navbar.Collapse className="bg-white transition-none">
+      <Navbar.Collapse className="bg-white">
         <Navbar.Link
           href="/"
           className={`text-xl ${activeLink === "home" ? "active" : ""}`}

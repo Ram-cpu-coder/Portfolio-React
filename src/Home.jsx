@@ -41,11 +41,11 @@ const Home = () => {
             </div>
           </div>
 
-          <img src="./assets/images/man.png" className="right-block" />
+          <img src="/assets/images/man.png" className="right-block" />
         </div>
         <div className="achievement-container bottom-block">
           <div className="achievement">
-            <img src="./assets/images/badge.png" />
+            <img src="/assets/images/badge.png" />
             <div className="text-achievement">
               <h2>Bachelor's in IT</h2>
               <p id="red">Graduated</p>
@@ -53,7 +53,7 @@ const Home = () => {
           </div>
           <hr />
           <div className="achievement">
-            <img src="./assets/images/badge.png" />
+            <img src="/assets/images/badge.png" />
             <div className="text-achievement">
               <h2>Full Stack Dev</h2>
               <p id="red">In Progress</p>
@@ -61,7 +61,7 @@ const Home = () => {
           </div>
           <hr />
           <div className="achievement">
-            <img src="./assets/images/badge.png" />
+            <img src="/assets/images/badge.png" />
             <div className="text-achievement">
               <h2>5 + Projects</h2>
               <p id="red">Completed</p>
