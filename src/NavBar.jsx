@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { Button, Navbar } from "flowbite-react";
+import { Navbar } from "flowbite-react";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 
@@ -38,35 +38,30 @@ const NavBar = () => {
       <Navbar.Toggle />
       <Navbar.Collapse className="bg-white">
         <Navbar.Link
-          href="/"
           className={`text-xl ${activeLink === "home" ? "active" : ""}`}
         >
-          Home
+          <Link to="/">Home</Link>
         </Navbar.Link>
 
         <Navbar.Link
-          href="/skills"
           className={`text-xl ${activeLink === "skills" ? "active" : ""}`}
         >
-          Skills
+          <Link to="/skills">Skills</Link>
         </Navbar.Link>
         <Navbar.Link
-          href="/projects"
           className={`text-xl ${activeLink === "projects" ? "active" : ""}`}
         >
-          Projects
+          <Link to="/projects">Projects</Link>
         </Navbar.Link>
         <Navbar.Link
-          href="/about"
           className={`text-xl ${activeLink === "about" ? "active" : ""}`}
         >
-          About
+          <Link to="/about">About</Link>
         </Navbar.Link>
         <Navbar.Link
-          href="/contact"
           className={`text-xl ${activeLink === "contact" ? "active" : ""}`}
         >
-          Contact
+          <Link to="/contact">Contact</Link>
         </Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
